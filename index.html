@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio #4 - Arreglos y Objetos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script defer src="assets/js/script.js"></script>
+  </head>
+
+  <body>
+    <nav class="p-4">
+      <div class="row">
+        <div class="col mb-4">
+          <label for="input-cuartos" class="form-label">Cantidad de Cuartos:</label>
+          <select id="input-cuartos" class="form-control" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <span class="col-12">Metros Cuadrados</span>
+        <div class="col-md-6">
+          <label for="input-desde" class="form-label">Desde:</label>
+          <input id="input-desde" type="number" class="form-control" min="0" />
+        </div>
+        <div class="col-md-6">
+          <label for="input-hasta" class="form-label">Hasta:</label>
+          <input id="input-hasta" type="number" class="form-control" min="0" />
+        </div>
+        <div class="d-grid col-12 mt-4">
+          <button id="btn-buscar" class="btn btn-primary">Buscar</button>
+        </div>
+        <div class="d-grid col-12 mt-2">
+          <button id="btn-reset" class="btn btn-secondary">Quitar Filtro</button>
+        </div>
+      </div>
+    </nav>
+
+    <section id="Propiedades" class="container p-4"></section>
+
+  </body>
+</html>
