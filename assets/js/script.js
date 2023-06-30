@@ -106,6 +106,9 @@ document.getElementById('btn-buscar').addEventListener('click', () => {
 });
 
 document.getElementById('btn-reset').addEventListener('click', () => {
+  document.getElementById('input-cuartos').value = ""
+  document.getElementById('input-desde').value = ""
+  document.getElementById('input-hasta').value = ""
   pintarHtml(propiedadesJSON);
 });
 
