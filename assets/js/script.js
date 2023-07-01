@@ -43,7 +43,6 @@ const propiedadesJSON = [
   },
 ];
 
-
 // Funcion que permite cargar el arreglo de objetos(propiedades) en la etiqueta section id #Propiedades del html.
 
 const pintarHtml = (propiedades) => {
@@ -76,7 +75,6 @@ const pintarHtml = (propiedades) => {
 
 pintarHtml(propiedadesJSON);
 
-
 // Funcion que filtra el arreglo de objetos(propiedades) al presionar el btn-buscar por
 // numeros de cuartos, metros cuadrados desde y hasta, creando un nuevo arreglo que es
 // cargado con la funcion pintarHtml()
@@ -106,9 +104,9 @@ document.getElementById('btn-buscar').addEventListener('click', () => {
 });
 
 document.getElementById('btn-reset').addEventListener('click', () => {
-  document.getElementById('input-cuartos').value = ""
-  document.getElementById('input-desde').value = ""
-  document.getElementById('input-hasta').value = ""
+  document.getElementById('input-cuartos').value = '1';
+  document.getElementById('input-desde').value = '';
+  document.getElementById('input-hasta').value = '';
   pintarHtml(propiedadesJSON);
 });
 
@@ -121,7 +119,6 @@ document.getElementById('input-hasta').addEventListener('click', () => {
   document.getElementById('input-hasta').classList.remove('is-invalid');
   document.getElementById('input-hasta').value = '';
 });
-
 
 // Funcion que valida el input-desde e input-hasta con los siguientes criterios :
 // - Deben ser numeros enteros
